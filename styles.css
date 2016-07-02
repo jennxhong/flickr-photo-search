@@ -1,0 +1,127 @@
+#lightbox,
+#lightbox-backdrop,
+#featured-photo-container {
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 5;
+}
+
+#lightbox-backdrop {
+	background: #000;
+	opacity: .5;
+	z-index: 1;
+}
+
+#featured-photo-container {
+	background: #fff;
+	margin: 30px auto;
+	overflow-y: scroll;
+}
+
+#featured-photo-container .row * {
+	display: inline-block;
+}
+
+#featured-photo-container div {
+	text-align: center;
+}
+
+#featured-photo-title {
+	font-size: 20px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 25px;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	white-space: nowrap;
+	width: 50%;
+}
+
+#featured-photo-img {
+	padding: 25px 0;
+}
+
+/* To account for responsive lightbox width */
+#featured-photo-img img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.search-container {
+	margin: 25px auto;
+}
+
+button.close {
+	padding: 10px 5px;
+}
+
+#search-input {
+	display: inline;
+	width: 250px;
+}
+
+#thumbnails {
+	margin-bottom: 30px;
+}
+
+#thumbnails img {
+	width: 114px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+	animation: fade-in .3s linear;
+	-moz-animation: fade-in .3s linear; 
+	-o-animation: fade-in .3s linear; 
+	-webkit-animation: fade-in .3s linear; 
+}
+
+#lightbox-backdrop.show {
+	display: block;
+	animation: fade-in-half .3s linear;
+	-moz-animation: fade-in-half .3s linear; 
+	-o-animation: fade-in-half .3s linear; 
+	-webkit-animation: fade-in-half .3s linear; 
+}
+
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Lightbox backdrop needs to be at 50% opacity, hence two fade-in keyframes */
+@keyframes fade-in-half {
+  0%   { opacity: 0; }
+  100% { opacity: .5; }
+}
+@-moz-keyframes fade-in-half {
+  0%   { opacity: 0; }
+  100% { opacity: .5; }
+}
+@-o-keyframes fade-in-half {
+  0%   { opacity: 0; }
+  100% { opacity: .5; }
+}
+@-webkit-keyframes fade-in-half {
+  0%   { opacity: 0; }
+  100% { opacity: .5; }
+}
