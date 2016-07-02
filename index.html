@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Photo Search</title>
+	</head>
+	<body>
+		<div class="search-container container">
+			<p class="hide">Enter tag for search</p>
+			<div class="row">
+				<div class="col-xs-12">
+					<form id="search-form" class="form-inline">
+						<div class="form-group">
+							<input type="text" id="search-input" class="form-control" placeholder="Search Flickr tags" autofocus>
+						</div>
+						<button type="submit" class="btn btn-default">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="thumbnails" class="container">
+		</div>	
+		<div id="lightbox" class="hide">
+			<div id="featured-photo-container" class="container">
+				<button type="button" class="close" id="close-button">x</button>
+				<div class="row">
+					<div class="col-xs-12">
+						<input type="button" id="prev" class="btn btn-default" value="<">
+						<span id="featured-photo-title"></span>
+						<input type="button" id="next" class="btn btn-default" value=">">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div id="featured-photo-img"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="lightbox-backdrop" class="hide"></div>
+		<script src="script.js"></script>
+	</body>
+</html>
