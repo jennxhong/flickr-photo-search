@@ -18,7 +18,7 @@ This is an example of using the [Flickr API](https://www.flickr.com/services/api
 - Chrome (Version 51.0.2704.106)
 - Safari (Version 9.1)
 - Firefox (Version 47.0.1)
-- IE
+- IE11
 
 ## Known issues
 
